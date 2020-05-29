@@ -14,7 +14,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Netclicks - все о сериалах</title>
@@ -83,12 +83,17 @@
         </hgroup>
 
         <section class="search">
+
             <form class="search__form">
-                <h2 class="search__form-head">Поиск</h2>
+
+                <h2 class="search__form-head"></h2>
+
                 <label class="search__form-block">
                     <input type="text" class="search__form-input" id="searchText"
                            placeholder="Введи название...">
+                           <button class="search__button"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </label>
+
             </form>
         </section>
     </div>
@@ -96,9 +101,14 @@
 
 <main>
     <div class="container">
+        <section class="hello">
+            <h1 id="phrase">Хочешь найти информацию о любимых фильмах или сериалах? Введи название и кликни на поиск, остальное мы сделаем за тебя!)</h1>
+
+        </section>
         <section class="tv-shows">
-            <h3 class="tv-shows__head">Результат поиска</h3>
+            <h3 class="tv-shows__head"></h3>
             <ul class="tv-shows__list">
+                <!--
                  <li class="tv-shows__item">
                     <a href="#" class="tv-card">
                         <span class="tv-card__vote">7.4</span>
@@ -289,6 +299,10 @@
                         <h4 class="tv-card__head">Untitled Star Wars: Rogue One Prequel Series</h4>
                     </a>
                 </li>
+                -->
+            </ul>
+            <ul class="pagination">
+
             </ul>
         </section>
 
@@ -330,7 +344,7 @@
                 <section class="header__info">
 
 
-                    <h3 dir="auto">Обзор: </h3>
+                    <h3 dir="auto">Описание: </h3>
                     <div class="overview" dir="auto">
 
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ut
@@ -339,7 +353,7 @@
 
                     </div>
                     <p class="modal__link-wrapper">
-                        <a class="modal__link" href="https://google.com" target="_blanc">Оффициальная страница</a>
+                        <a class="modal__link" href="https://google.com" target="_blanc">Официальная страница</a>
                     </p>
                 </section>
             </article>
@@ -365,9 +379,11 @@
     </div>
 </div>
 
-<script src="script/main.js"></script>
+
 
 <script src="https://use.fontawesome.com/c79e2f3459.js"></script>
+<script src="script/main.js"></script>
+
 
 </body>
 
